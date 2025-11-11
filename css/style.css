@@ -22,6 +22,7 @@ section{
 /* ======================================= */
 /* HEADER SECTION */
 header{
+    z-index: 100;
     padding: 1em;
     background-color: rgba(255, 255, 255, 0.034);
     backdrop-filter: blur(15px);
@@ -92,7 +93,7 @@ header nav ul a{
     background-color: rgba(0, 0, 0, 0.288);
     box-shadow: 5px 5px 10em rgba(128, 128, 128, 0.183);
     border-radius: 10px;
-    border: 1px solid gray;
+    border: 1px solid rgba(128, 128, 128, 0.295);
     cursor: pointer;
     /* margin: 1em; */
 }
@@ -125,6 +126,36 @@ header nav ul a{
     margin: 1em;
 }
 
+.digital-watch-container{
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    margin: 0em 1em;
+    padding: 1em;
+    color: darkcyan;
+    font-size: 2em;
+    font-weight: bolder;
+}
+
+/* stack  */
+.stack-container{
+    margin: 1.5em;
+}
+
+.stack-images{
+    max-width: 3rem;
+    margin: 5px;
+    padding: 8px;
+    background-color: rgba(0, 148, 77, 0.228);
+    border: 1px solid darkcyan;
+    border: 5px;
+}
+
+.stack-images:hover{
+    transform: scale(1.03);
+    cursor: pointer;
+}
+
+/* ================================================== */
 /* SERVICES SECTION */
 
 .services-section{
@@ -150,6 +181,17 @@ header nav ul a{
     box-shadow: 1px 1px 10rem rgba(0, 255, 255, 0.301);
 }
 
+/* ABOUT SECTION */
+
+.about-section{
+    display: flex;
+    justify-content: space-around;
+}
+
+.about-textual-content{
+    
+}
+
 /* FOOTER SECTION */
 footer{
     min-height: 70vh;
@@ -161,6 +203,21 @@ footer{
 
 footer:hover{
     box-shadow: 5px 5px 25rem rgba(0, 255, 247, 0.354) ;
+}
+
+footer ul{
+    list-style-type: none;
+
+}
+
+footer ul a{
+    text-decoration: none;
+    color: white;
+}
+
+footer ul a:hover{
+    color: darkcyan;
+    text-decoration: underline;
 }
 
 .footer{
