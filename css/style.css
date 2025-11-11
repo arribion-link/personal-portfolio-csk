@@ -129,16 +129,56 @@ header nav ul a{
 .digital-watch-container{
     border: 1px solid darkcyan;
     border-radius: 5px;
-    margin: 0em 1em;
+    margin: 1em ;
+
     padding: 1em;
     color: darkcyan;
-    font-size: 2em;
+    font-size: 1.5em;
     font-weight: bolder;
 }
 
+.digital-watch-container:hover{
+    color: white;
+}
+
+.class-weather-preview-container{
+    border: 1px solid darkcyan;
+    border-radius: 5px;
+    margin: 1em ;
+    padding: 1em;
+    color: darkcyan;
+    min-height: 72%;
+}
+
+
 /* stack  */
-.stack-container{
-    margin: 1.5em;
+.stack-wrapper {
+  width: 100%;
+  overflow: hidden;
+/* background: #1d1d1d; */
+  padding: 1em 0;
+}
+
+.stack-container {
+  display: flex;
+  width: max-content;
+  animation: scroll 30s linear infinite;
+}
+
+.stack-images {
+  height: 60px;
+  margin: 100%;
+  flex-shrink: 0;
+}
+
+/* Keyframes for horizontal scroll */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 .stack-images{
@@ -184,12 +224,19 @@ header nav ul a{
 /* ABOUT SECTION */
 
 .about-section{
+    margin-top: 8em;
     display: flex;
     justify-content: space-around;
+    gap: 4em;
 }
 
 .about-textual-content{
-    
+
+}
+
+.about-image{
+    max-width: 30rem;
+    border-radius: 10px ;
 }
 
 /* FOOTER SECTION */
